@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - CombiConnect Tours</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CombiConnect</div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html">Book a Trip</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Contact me</h1>
+    <p>Have questions, need help, or want to list your combi? Reach out:</p>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:tsholofelothothela@gmail.com">tsholofelothothela@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/27717612648" target="_blank">Chat with me</a></p>
+      <p><strong>Instagram:</strong> @combi_connect_tours</p>
+    </div>
+
+    <form class="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CombiConnect Tours. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      const hamburger = document.getElementById('hamburger');
+      nav.classList.toggle('active');
+      hamburger.innerHTML = nav.classList.contains('active') ? '×' : '☰';
+    }
+  </script>
+</body>
+</html>

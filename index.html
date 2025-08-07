@@ -6,24 +6,69 @@
   <title>CombiConnect Tours</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <link href=""https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header with Navigation Bar -->
   <header>
-    <h1>CombiConnect Tours</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="list.html">List Your Combi</a>
+    <nav class="navbar">
+      <div class="logo">CombiConnect</div>
+
+      <!-- Hamburger Icon (visible on mobile) -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html">Book a Trip</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="list.html" class="list-link">List Your Combi</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Plan. Connect. Tour Together.</h2>
-    <p>We link trip planners with reliable combi owners — with or without a driver.</p>
+    <h1>Welcome to CombiConnect Tours</h1>
+    <p>Your gateway to unforgettable combi tours. Explore, connect, and travel with ease.</p>
     <a class="btn" href="list.html">List Your Combi</a>
-  </section>
+  </section>    
 
+<!-- Why Choose CombiConnect Section -->
+<section class="why-choose">
+  <h2>Why Choose CombiConnect?</h2>
+  <p>
+    CombiConnect Tours is built to bridge the gap between travelers and reliable combi owners across the country. Whether you're planning a school trip, a church outing, or a weekend getaway with friends, we make it simple to find and book the perfect ride for your needs.
+  </p>
+  <ul>
+    <li>✔ Easy booking process</li>
+    <li>✔ Reliable and vetted combi owners</li>
+    <li>✔ Transparent pricing and community support</li>
+    <li>✔ Built locally with your travel needs in mind</li>
+  </ul>
+</section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 CombiConnect Tours. All rights reserved.</p>
   </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      const hamburger = document.getElementById("hamburger");
+
+      nav.classList.toggle("active");
+
+      if (nav.classList.contains("active")) {
+        hamburger.innerHTML = "×";
+      } else {
+        hamburger.innerHTML = "☰";
+      }
+    }
+  </script>
 </body>
 </html>

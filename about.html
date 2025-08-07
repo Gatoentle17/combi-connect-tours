@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CombiConnect Tours</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CombiConnect</div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html">Book a Trip</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>The Aim</h1>
+    <p>CombiConnect Tours connects trip planners with trusted combi owners for smooth, reliable group travel across the country.</p>
+<br>
+<section class="about-section">
+    <div class="container">
+      <h1>About CombiConnect</h1>
+      <p>CombiConnect Tours is created to make travel easier, safer, and more connected across South Africa. Whether you're a traveler looking to explore new places or a combi owner looking to offer trips, the platform brings everyone together.</p>
+
+      <h2>Mission</h2>
+      <p>To connect people through reliable and affordable transport, powered by real community-owned combis.</p>
+
+      <h2>What Makes CombiConnect Different?</h2>
+      <ul>
+        <li>✅ Simple platform for booking or listing combis</li>
+        <li>✅ Trusted by local drivers and travelers</li>
+        <li>✅ Safe, secure, and community-driven</li>
+        <li>✅ Available across towns and cities</li>
+      </ul>
+
+      <section class="team-section">
+        <h2>Meet the Heart Behind CombiConnect</h2>
+        <div class="team-member">
+          <img src="self.jpg" alt="Tsholofelo Thothela" class="profile-pic"
+           style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: block; margin: 0 auto;">
+          <h3>Tsholofelo Thothela</h3>
+          <p>Founder & CEO</p>
+          <p>With a passion for travel and community, Tsholofelo started CombiConnect to bridge the gap between travelers and combi owners.</p>
+        </div>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 CombiConnect Tours. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      const hamburger = document.getElementById('hamburger');
+      nav.classList.toggle('active');
+      hamburger.innerHTML = nav.classList.contains('active') ? '×' : '☰';
+    }
+  </script>
+</body>
+</html>
